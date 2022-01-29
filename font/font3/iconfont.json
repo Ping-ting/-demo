@@ -1,0 +1,44 @@
+{
+  "id": "2791080",
+  "name": "个人信息名片",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3090803",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "3165657",
+      "name": "年龄",
+      "font_class": "nianling",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "4896412",
+      "name": "vip",
+      "font_class": "shiliangzhinengduixiang-",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "22160065",
+      "name": "性别",
+      "font_class": "nannv1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "22935863",
+      "name": "地区",
+      "font_class": "diqu",
+      "unicode": "e7de",
+      "unicode_decimal": 59358
+    }
+  ]
+}

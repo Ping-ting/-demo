@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/font4/iconfont.css">
+    <link rel="stylesheet" href="./管理员.css">
+    <title>管理员</title>
+    <script src="./管理员.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="left-outer">
+            <div class="head-outer">
+                <div id="head"><i class="iconfont">&#xe646;</i></div>
+                <p>manager</p>
+            </div>
+            <div class="box-outer">
+                <div id="operate-box" class="box">所有博客</div>
+                <div id="publish-box" class="box">发表博客</div>
+                <div id="back-box" class="box">返回主页</div>
+            </div>
+            
+        </div>
+        <div class="right-outer">
+            <div class="search-outer">
+                <input type="text" id="search" placeholder="搜索你想要进行操作的博客吧">
+                <button id="submit">Go</button>
+            </div>
+            <div class="all-outer">
+                <div id="operate-outer">
+                </div>
+                <div id="publish-outer">
+                    <p style="font-weight: 600;font-size: 20px;position: absolute;top: 10%;text-align: center;left: 50%;transform: translateX(-50%);">-----&nbsp;&nbsp;写博客&nbsp;&nbsp;-----</p>
+                    <div class="publish-left">
+                        <p>博客标题</p>
+                        <input type="text" id="newBlog-title" class="newBlog-box" placeholder="给博客想个标题叭">
+                        <p>博客分类</p>
+                        <select name="kind" id="newBlog-kind" class="newBlog-box">
+                            <option value="none" selected disabled hidden>给你的博客分个类吧</option>
+                            <option value="Python">Python</option>
+                            <option value="AI">AI</option>
+                            <option value="大数据">大数据</option>
+                            <option value="游戏开发">游戏开发</option>
+                        </select>
+                    </div>
+                    <div class="publish-right">
+                        <p>博客内容</p>
+                        <input type="text" id="newBlog-content" class="newBlog-box" placeholder="在这里写下你想分享得内容叭">
+                    </div>
+                    <div class="imgSrc-outer">
+                        <p>图片地址</p>
+                        <input type="text" id="newBlog-imgSrc" class="newBlog-box" placeholder="加个图片吧">
+                    </div>
+                    <div class="publish-button-outer">
+                        <button id="cancel-publish" title="取消发表博客">取消</button>
+                        <button id="ensure-publish" title="确认发表博客">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

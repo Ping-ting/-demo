@@ -1,0 +1,122 @@
+
+        *{
+            margin: 0px;
+        }
+        li{
+            list-style:none;
+        }
+        body{
+            background-image: url(./img/bg2.jpeg);
+            background-position: 0 0;
+            background-attachment: fixed;
+            /* background-size: 100%; */
+            background-size: cover;
+        } 
+        .dz-outer{
+            width: 50%;
+            height: 600px;
+            padding: 40px 30px;
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
+        }
+        .nav-outer
+        {
+            width: 520px;
+            margin: 0 auto;
+        }
+        .check-box{
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            margin-left: 15px;
+            line-height: 40px;
+            background-color: #d9eff8;
+            text-align: center;
+            border-radius: 17px;
+            margin: 20px;
+            color: #1d77c0;
+            cursor: pointer;
+            margin-left: 25px;
+            user-select: none;
+        }
+        #login-outer,#register-outer,#manager-outer{
+            width: 420px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+        #register-outer,#manager-outer{
+            display: none;
+        }
+        .dz-outer input{
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            display: inline-block;
+            font-size: inherit;
+            height: 40px;
+            line-height: 40px;
+            outline: 0;
+            padding: 0 15px;
+            width: 100%;
+            caret-color:#a0a0a0;
+            margin-top: 50px;
+            /* box-shadow: 0 0 20px rgb(91, 171, 195); */
+            
+        }
+        .dz-outer button{
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+            background-image: none;
+            display: inline-block;
+            line-height: 1;
+            white-space: nowrap;
+            transition: .1s;
+            font-weight: 500;
+            margin-top: 40px;
+            border: 1px solid #0381aa;
+            color: #fff;
+            background-color: #00a7de;
+            font-size: 14px;
+            position: absolute;
+            top: 300px;
+            left: 3px;
+            user-select: none;
+        }
+        .dz-outer button:hover{
+            background-color: #40c0eb;
+        }
+        #register-id-span,#register-password-span,#manager-password-span,#login-password-span,#login-id-span{
+            width: 200px;
+            display: inline-block;
+            position: absolute;
+            font-size: 14px;
+            color: rgb(206, 62, 62);
+        }
+        #register-id-span{
+            top: 24%;
+            right: -210px;
+        }
+        #register-password-span{
+            top: 90%;
+            right: -210px;
+        }
+        #manager-password-span{
+            top: 72%;
+            right: -210px;
+        }
+        #login-password-span{
+            top: 84%;
+            right: -210px;
+        }
+        #login-id-span{
+            top: 34%;
+            right: -210px;
+        }
+    

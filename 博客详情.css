@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+}
+li{
+    list-style:none;
+}
+body{
+    background-image: url(./img/bg2.jpeg);
+    background-position: 0 -160px;
+    background-attachment: fixed;
+    background-size: 100%;
+}  
+.blog-outer{
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(253, 253, 253, 0.9);
+    width: 950px;
+    height:350px;
+    overflow: hidden;
+}
+.blog-outer p{
+    color: #4c7b97;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+.blog-outer .blog-title{
+    color: #606266;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.blog-outer .blog-content{
+    display: inline-block;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    top: 30%;
+    line-height: 26px;
+    font-size: 16px;
+    color: #606266;
+    overflow: hidden;
+}
+.blog-outer .blog-img{
+    height: 60%;
+    max-width: 250px;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+.comment-outer{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(253, 253, 253, 0.9);
+    width: 950px;
+    height: auto;
+}
+.comment-top{
+    width: 490px;
+    margin: 0 auto;
+}
+#comment{
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border: 2px #c8c3c3 solid;
+    background-color: rgb(248, 248, 248);
+    caret-color: rgb(198, 199, 199);
+    text-indent: 10px;
+}
+#submit{
+    cursor: pointer;
+    border: none;
+    height: 36px;
+    width: 60px;
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+    background-color: rgb(235, 235, 235);
+    border: 2px #c8c3c3 solid;
+    position: relative;
+}
+#submit:hover{
+    background-color: rgb(248, 248, 248);
+}
+.comment-outer li{
+    margin-top: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: rgb(39, 39, 39);
+    background-color: rgb(221, 220, 220);
+}

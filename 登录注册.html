@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./登录注册.css">
+    <title>登录注册页面</title>
+    <script src="./登录注册.js"></script>
+</head>
+<body>
+    <div class="dz-outer">
+        <div class="nav-outer">
+            <div id="login" class="check-box" style="background-color: #53bff1;color:#fff;">登录</div>
+            <div id="register" class="check-box">注册</div>
+            <div id="manager" class="check-box">管理员</div>
+        </div>
+        <div id="login-outer">
+            <input type="text" id="login-id" placeholder="请输入ID"><span id="login-id-span"></span>
+            <input type="password" id="login-password" placeholder="请输入密码"><span id="login-password-span"></span>
+            <button id="ensure-login">登录</button>
+        </div>
+        <div id="register-outer">
+            <input type="text" id="register-id" placeholder="输入ID"><span id="register-id-span"></span>
+            <input type="password" id="register-password" placeholder="输入密码">
+            <input type="password" id="register-password-again" placeholder="请确认密码"><span id="register-password-span"></span>
+            <button id="ensure-register">注册</button>
+        </div>
+        <div id="manager-outer">
+            <p style="color: rgb(204, 204, 204);">请输入管理员密钥</p>
+            <input type="password" id="manager-password"><span id="manager-password-span"></span>
+            <button id="ensure-manager">确定</button>
+        </div>
+    </div>
+</body>
+</html>

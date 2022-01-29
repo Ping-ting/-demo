@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/CSS/reset.css">
+    <link rel="stylesheet" href="./font/font1/iconfont.css">
+    <link rel="stylesheet" href="./font/font2/iconfont.css">
+    <link rel="stylesheet" href="./font/font3/iconfont.css">
+    <link rel="stylesheet" href="./font/font4/iconfont.css">
+    <link rel="stylesheet" href="./主页.css">
+    <title>博客主页</title>
+    <script src="../JS小练习/省市区三级联动数据.js"></script>
+    <script src="./主页.js"></script>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="nav-outer">
+        <div class="nav-left">
+            <a href="javascript:;" class="allA">专栏课程</a>
+            <a href="javascript:;" class="allA">下载</a>
+            <a href="javascript:;" class="allA">问答</a>
+            <a href="javascript:;" class="allA">认证</a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" placeholder="搜索你喜欢的内容吧" id="search-box">
+            <button id="Go">Go</button>
+        </div>
+        <div class="nav-right">
+            <a href="javascript:;" class="allA">会员中心</a>
+            <a href="javascript:;" class="allA">动态</a>
+            <a href="javascript:;" class="allA">插件</a>
+            <a href="javascript:;" class="allA">社区</a>
+        </div>
+        <!-- 登录注册 -->
+        <div id="dz-outer">
+            <a href="./登录注册.html" class="allA" title="点我登录或注册">请先登录哦!</a>
+        </div>
+        <!-- 个人 -->
+        <div class="user-outer">
+            <div id="head"></div>
+            <div class="hidden-list">
+                <p id="id"></p>
+                <p id="sex"></p>
+                <p id="age"></p>
+                <p id="likeNumber"></p>
+                <p id="collectNumber"></p>
+                <p id="area"></p>
+                <p id="out"><i class="iconfont" style="color: rgb(121, 121, 121);">&#xe627;</i> 退出</p>
+                <p id="improve">资料未完善？点我完善资料！</p>
+            </div>
+        </div>
+    </div>
+    <!-- 修改资料框框 -->
+    <div id="change-wrapper">
+        <div class="change-outer">
+            <div class="change-left">
+                <p>用户ID</p>
+                <input type="text" id="change-id" class="change-box" style="background-color: #f8f8f8;cursor: not-allowed; color: #cccccc;" disabled="disabled">
+                <p>性别</p>
+                <select name="" id="change-sex" class="change-box">
+                    <option value="none" selected disabled hidden >请选择性别</option>
+                    <option value="女">女</option>
+                    <option value="男">男</option>
+                </select>
+            </div>
+            <div class="change-right">
+                <p>出生日期</p>
+                <input type="date" class="change-box" id="change-data" value="1900-01-01">
+                <p>所在地区</p>
+                <div class="change-area" >
+                    <form action="" method="POST">
+                        <select name="province" id="province" class="select">
+                            <option value="none" selected disabled hidden>请选择省份</option>
+                        </select>
+                        <select name="city" id="city" class="select">
+                            <option value="none" selected disabled hidden>请选择城市</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="change-introduction">
+                <p>头像地址</p>
+                <input type="text" class="change-box" style="height: 40px;" id="change-imgSrc">
+            </div>
+            <div class="button-outer">
+                <button id="change-cancel">取消</button>
+                <button id="change-ensure">确定</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <li class="nav-list" id="hotList">总榜</li>
+            <li class="nav-list" id="Python">Python</li>
+            <li class="nav-list" id="AI">AI</li>
+            <li class="nav-list" id="bigData">大数据</li>
+            <li class="nav-list" id="gameDevelopment">游戏开发</li>
+        </div>
+        <!-- blog 主体 -->
+        <div class="blog-outer">
+        </div>
+    </div>
+    
+    <!-- 回到顶部 -->
+    <a href="#" class="go-top-outer">
+        <i class="iconfont" style="color: rgb(170, 170, 170);font-size: 22px;">&#xe6c7;</i>
+    </a>
+    
+</body>
+</html>
